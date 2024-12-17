@@ -3,6 +3,8 @@
 ## **Project Overview**  
 This project implements a **market-neutral trading strategy** focusing on **pairs trading** for Japanese stocks over the period **2013–2021**. By leveraging statistical arbitrage, machine learning, and a robust backtesting framework, the strategy systematically identifies and trades mean-reverting pairs.  
 
+![Highlight](results/clustering_outcome/cluster_4.png)  
+
 Key highlights include:  
 - **DBSCAN clustering** with PCA for pair selection.  
 - Rigorous pair selection using **statistical metrics** (cointegration tests, Hurst exponent).  
@@ -37,8 +39,8 @@ The following steps were taken to identify robust trading pairs:
 - **DBSCAN** identified clusters of similar stocks based on returns and volume.  
 - **t-SNE** was used to visualize the high-dimensional clustering results in **2D space**.  
 
-**t-SNE Visualization Example**:  
-![t-SNE Clustering](results/clustering_outcome/tsne_cluster_visualization.png)  
+**t-SNE Visualization**:  
+![t-SNE Clustering](DBSCAN_2013_2015.png)  
 
 #### **Pair Selection Criteria**  
 Pairs were selected based on the following quantitative thresholds:  
@@ -271,6 +273,14 @@ This integration of machine learning adds robustness and adaptability to the sig
 ### **Clustering Visualization**  
 - DBSCAN clustering with t-SNE visualization:  
 ![Cluster Visualization](results/clustering_outcome/tsne_cluster_visualization.png)  
+
+![Cluster 1](results/clustering_outcome/cluster_1.png)  
+![Cluster 2](results/clustering_outcome/cluster_2.png)  
+![Cluster 3](results/clustering_outcome/cluster_3.png)  
+![Cluster 4](results/clustering_outcome/cluster_4.png)  
+![Cluster 5](results/clustering_outcome/cluster_5.png)  
+![Cluster 6](results/clustering_outcome/cluster_6.png)  
+![Cluster 7](results/clustering_outcome/cluster_7.png)  
 
 ### **Pair Trading Signals**  
 - Z-score-based trading signals for selected pairs:  
