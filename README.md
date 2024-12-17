@@ -244,4 +244,53 @@ Signals for each trading pair were generated using:
    - Ratios of **SMA** (5, 10, 30, 50), **EMA** (5, 10, 30, 50, 95), and **RSI (14)** for each pair.  
    - Calculated Z-scores to measure deviations from the mean.  
 
-2. **Machine Learning with Random
+
+2. **Machine Learning with Random Forest**:  
+   - Trained a **Random Forest Regressor** on the training data (2013–2015) to predict Z-scores on the test set (2016–2021).  
+   - Predicted Z-scores were used to identify long/short positions:  
+     - **Short**: If Z-score > upper threshold (75th percentile).  
+     - **Long**: If Z-score < lower threshold (25th percentile).  
+
+This integration of machine learning adds robustness and adaptability to the signal generation process.
+
+---
+
+### **4. Backtesting Framework**  
+- Simulated portfolio performance with **equal capital allocation** across selected pairs.  
+- Calculated the following metrics for both individual pairs and the aggregated portfolio:  
+   - **Compound Annual Growth Rate (CAGR)**  
+   - **Sharpe Ratio**  
+   - **Maximum Drawdown (MDD)**  
+   - **Annualized Volatility**  
+   - **Sortino Ratio**  
+
+---
+
+## **Results**  
+
+### **Clustering Visualization**  
+- DBSCAN clustering with t-SNE visualization:  
+![Cluster Visualization](results/clustering_outcome/tsne_cluster_visualization.png)  
+
+### **Pair Trading Signals**  
+- Z-score-based trading signals for selected pairs:  
+![Trading Signals](results/signal/asset1_asset2_signal_chart.png)  
+
+### **Portfolio Performance**  
+- Test set cumulative portfolio returns:  
+![Portfolio Performance](results/backtesting/asset1_asset2_portfolio_perf_chart.png)  
+
+---
+
+## **Overall Performance Metrics**  
+
+| **Metric**                        | **Value**          |  
+|----------------------------------|--------------------|  
+| **Final Portfolio Value**         | $1,097,596.52      |  
+| **Compound Annual Growth Rate**   | **1.81%**          |  
+| **Maximum Drawdown (MDD)**        | **-4.34%**         |  
+| **Annualized Volatility**         | **2.60%**          |  
+| **Sharpe Ratio**                  | **0.70**           |  
+| **Sortino Ratio**                 | **1.02**           |  
+
+---
