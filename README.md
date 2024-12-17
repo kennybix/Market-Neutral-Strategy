@@ -271,7 +271,7 @@ This integration of machine learning adds robustness and adaptability to the sig
 ## **Results**  
 
 ### **Clustering Visualization**  
-- DBSCAN clustering with t-SNE visualization:  
+- Clustering outcomes based on daily returns:  
 ![Cluster Visualization](results/clustering_outcome/tsne_cluster_visualization.png)  
 
 ![Cluster 1](results/clustering_outcome/cluster_1.png)  
@@ -282,13 +282,13 @@ This integration of machine learning adds robustness and adaptability to the sig
 ![Cluster 6](results/clustering_outcome/cluster_6.png)  
 ![Cluster 7](results/clustering_outcome/cluster_7.png)  
 
-### **Pair Trading Signals**  
+<!-- ### **Pair Trading Signals**  
 - Z-score-based trading signals for selected pairs:  
 ![Trading Signals](results/signal/asset1_asset2_signal_chart.png)  
 
 ### **Portfolio Performance**  
 - Test set cumulative portfolio returns:  
-![Portfolio Performance](results/backtesting/asset1_asset2_portfolio_perf_chart.png)  
+![Portfolio Performance](results/backtesting/asset1_asset2_portfolio_perf_chart.png)   -->
 
 ---
 
