@@ -272,7 +272,7 @@ This integration of machine learning adds robustness and adaptability to the sig
 
 ### **Clustering Visualization**  
 - Clustering outcomes based on daily returns:  
-![Cluster Visualization](results/clustering_outcome/tsne_cluster_visualization.png)  
+<!-- ![Cluster Visualization](results/clustering_outcome/tsne_cluster_visualization.png)   -->
 
 ![Cluster 1](results/clustering_outcome/cluster_1.png)  
 ![Cluster 2](results/clustering_outcome/cluster_2.png)  
