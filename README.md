@@ -304,3 +304,22 @@ This integration of machine learning adds robustness and adaptability to the sig
 | **Sortino Ratio**                 | **1.02**           |  
 
 ---
+
+## **Future Improvements**  
+- **Filter for Look-Ahead Bias**: Ensure that no future data leaks into the training or testing phases.  
+- **Walk-Forward Approach**: Re-adjust pairs and clusters on a yearly basis to maintain relevance with changing market dynamics.  
+- **Dynamic Portfolio Optimization**: Introduce Beta-adjusted weights or Kelly Criterion for capital allocation.  
+- **Risk Management**: Implement stop-loss triggers and volatility-adjusted position sizing.  
+- **Execution Simulation**: Add transaction costs and slippage to simulate real-world trading.  
+- **Advanced Models**: Explore **LSTM-based models** or Transformers for time-series prediction.  
+- **Scaling and Automation**: Integrate live market feeds and automated trading pipelines.  
+
+---
+
+## **Conclusion**  
+This project demonstrates a systematic **market-neutral trading strategy** that combines:  
+- **Quantitative Analysis**: DBSCAN clustering, cointegration tests, and statistical metrics.  
+- **Machine Learning**: Signal prediction using **Random Forest Regressor**.  
+- **Backtesting**: Comprehensive performance evaluation with robust financial metrics.  
+
+By leveraging data-driven techniques, the strategy delivers a practical and scalable solution for pairs trading. Feel free to connect if you're interested in exploring this project further or collaborating! 🚀  
